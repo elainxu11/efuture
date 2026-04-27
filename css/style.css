@@ -1,9 +1,76 @@
-/********** Template CSS **********/
+/********** EFUTURE Custom CSS **********/
 :root {
-    --primary: #daf0ff;
-    --secondary: #FFC300;
-    --light: #F6F4F9;
-    --dark: #04000B;
+    --primary: #1a365d;      /* Navy Blue - trust, reliability */
+    --secondary: #0d9488;  /* Teal - modern, logistics-appropriate */
+    --accent: #4a5568;      /* Slate Gray - professionalism */
+    --light: #f8fafc;      /* Light gray background */
+    --dark: #1e293b;       /* Dark slate for text */
+}
+
+/* Override Bootstrap primary colors */
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: #13294a !important;
+    border-color: #13294a !important;
+}
+
+/* Hero section - navy background */
+.hero-header {
+    background-color: var(--primary) !important;
+    padding: 8rem 0 6rem 0;
+}
+
+.hero-header h1 {
+    color: #ffffff !important;
+}
+
+.hero-header p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Feature section icons - use teal */
+.feature-item i {
+    color: var(--secondary) !important;
+}
+
+/* Service section hover - use navy */
+.service-item:hover {
+    background: var(--primary) !important;
+}
+
+.service-item:hover h5,
+.service-item:hover p {
+    color: #ffffff !important;
+}
+
+/* Footer - navy background */
+.footer {
+    background-color: var(--primary) !important;
+}
+
+/* Section titles - use navy */
+.section-title.text-secondary span:first-child,
+.section-title.text-secondary span:last-child,
+.section-title.text-secondary span:first-child::after,
+.section-title.text-secondary span:last-child::after {
+    background: var(--primary) !important;
+}
+
+/* Progress bars - use teal */
+.progress-bar.bg-secondary {
+    background-color: var(--secondary) !important;
 }
 
 
